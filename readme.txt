@@ -32,7 +32,7 @@ The features of this plugin can be listed as follows:
 
 This section describes how to install the plugin and get it working.
 
-1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
+1. Upload `parsi-sokhan.zip` to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. Place `<?php echo do_shortcode('[parsi_sokhan]');?>` for fixed text or `<?php echo do_shortcode('[parsi_sokhan_move]');?>` for moving text in your templates
 
