@@ -17,15 +17,15 @@ This plugin can add a word of elders is the best because it has the most feature
 The features of this plugin can be listed as follows:
 
 
-*   "Speak to insert text and its author
-*   "Speaking to edit and author
-*   "Erase and search the words
-*   "Remove whole and individual words
-*   "Enable or disable the speech
-*   "Search based on text and speech writer
-*   "Release fixed and moving speech text
-*   "The possibility of comfortable style statement
-*   "Ultra fast loading.
+* Çã˜Çä ÏÑÌ ÓÎä æ ãÊä Èå åãÑÇå äæíÓäÏå Âä 
+* Çã˜Çä æíÑÇíÔ ÓÎä æ äæíÓäÏå
+* Çã˜Çä ÍĞİ æ ÌÓÊÌæ ÏÑ Èíä ÓÎäÇä 
+* Çã˜Çä ÍĞİ ˜áí æ Ê˜í ÓÎäÇä 
+* Çã˜Çä İÚÇá æ ÛíÑ İÚÇá ÓÇÒí ÓÎäÇä 
+* Çã˜Çä ÌÓÊÌæ ÈÑ ÇÓÇÓ ãÊä æ äæíÓäÏå ÓÎä
+* ÇäÊÔÇÑ ÓÎäÇä Èå ÕæÑÊ ãÊä ËÇÈÊ æ ãÊÍÑ˜
+* Çã˜Çä ÇÓÊÇíá Ïåí ÑÇÍÊ Èå ÓÎäÇä 
+* ÓÑÚÊ İæŞ ÇáÚÇÏå ÏÑ ÈÇÑĞÇÑí 
 
 
 == Installation ==
