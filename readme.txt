@@ -48,7 +48,7 @@ Answer [parsi_sokhan] , [parsi_sokhan_move]
 
 == Screenshots ==
 
-?. This screen shot description corresponds to screenshot-1.PNG.
+1. Here's a screenshot of it in action.
 
 == Changelog ==
 
