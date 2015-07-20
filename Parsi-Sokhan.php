@@ -29,7 +29,7 @@ add_action('admin_print_styles', 'sb_styles_parsisokhan');
 add_action('admin_print_scripts','sb_scripts_parsisokhan');
 //Functions
 function admin_pages_parsisokhan() {
-    add_menu_page("پارسی سخن", "پارسی سخن", 'manage_options', 'sb_page', 'parsisokhan_page_content' ,plugins_url( 'Parsi-Sokhan/img/icon.png' ), 99);
+    add_menu_page("پارسی سخن", "پارسی سخن", 'manage_options', 'sb_page', 'parsisokhan_page_content' ,plugins_url( 'parsi-sokhan/img/icon.png' ), 99);
 }
 function parsisokhan_init(){
     global $wpdb;
