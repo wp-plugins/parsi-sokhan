@@ -70,7 +70,7 @@ function parsisokhan_actions(){
 }
 function parsisokhan_delete_all(){
     global $wpdb;
-    $sql="DELETE FROM {$wpdb->prefix}sb WHERE 1";
+    $sql="DELETE FROM {$wpdb->prefix}parsi_sokhan WHERE 1";
     $wpdb->query($sql);
 }
 function parsisokhan_delete_selected(){
@@ -78,7 +78,7 @@ function parsisokhan_delete_selected(){
    $ids=$_POST['sb_item_checked'];
    if(count($ids)!=0){
        foreach ($ids as $id) {
-       $sql="DELETE FROM {$wpdb->prefix}sb WHERE id='%d'";
+       $sql="DELETE FROM {$wpdb->prefix}parsi_sokhan WHERE id='%d'";
        $wpdb->query( $wpdb->prepare( $sql,$id ) );
    }
    }
@@ -90,7 +90,7 @@ function parsisokhan_active_selected()
     $ids = $_POST['sb_item_checked'];
     if (count($ids) != 0) {
         foreach ($ids as $id) {
-            $sql = "UPDATE {$wpdb->prefix}sb SET status='1' WHERE id='%d'";
+            $sql = "UPDATE {$wpdb->prefix}parsi_sokhan SET status='1' WHERE id='%d'";
             $wpdb->query( $wpdb->prepare( $sql,$id ) );
         }
 		echo " ";
@@ -101,7 +101,7 @@ function  parsisokhan_inactive_selected(){
     $ids = $_POST['sb_item_checked'];
     if (count($ids) != 0) {
         foreach ($ids as $id) {
-            $sql = "UPDATE {$wpdb->prefix}sb SET status='0' WHERE id='%d'";
+            $sql = "UPDATE {$wpdb->prefix}parsi_sokhan SET status='0' WHERE id='%d'";
             $wpdb->query( $wpdb->prepare( $sql,$id ) );
         }
 		echo " ";

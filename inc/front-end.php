@@ -17,11 +17,11 @@ function parsisokhan_page_content() {
         $nonce = $_REQUEST['_wpnonce'];
         parsisokhan_verify_nonce($nonce);
     }
-    $sql="SELECT * FROM {$wpdb->prefix}sb {$where} ORDER BY date";
+    $sql="SELECT * FROM {$wpdb->prefix}parsi_sokhan {$where} ORDER BY date";
     $result=$wpdb->get_results(trim($sql));
     $total_count=count($result);
     $pagination=new Pagination_parsisokhan($page, $per_page, $total_count);
-    $sql="SELECT * FROM {$wpdb->prefix}sb {$where} ORDER BY date LIMIT {$per_page} OFFSET {$pagination->offset()}";
+    $sql="SELECT * FROM {$wpdb->prefix}parsi_sokhan {$where} ORDER BY date LIMIT {$per_page} OFFSET {$pagination->offset()}";
     $sb_res=$wpdb->get_results($sql);
     $sb_count=count($sb_res);
     ?>

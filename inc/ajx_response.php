@@ -9,7 +9,7 @@ function parsisokhan_add_new()
     $teller=  esc_attr($_POST['teller']).' :';
     $content=  esc_attr($_POST['content']);
     $date=  current_time('mysql');
-    $sql="INSERT INTO {$wpdb->prefix}sb (teller,content,status,date)VALUES('%s','%s','1','%d')";
+    $sql="INSERT INTO {$wpdb->prefix}parsi_sokhan (teller,content,status,date)VALUES('%s','%s','1','%d')";
     $res=$wpdb->query($wpdb->prepare( $sql,$teller ,$content,'1',$date ) );
     if($res)
     {
@@ -32,7 +32,7 @@ function parsisokhan_change_status()
         $set_status=1;
     }
     if($id!=0){
-        $sql="UPDATE {$wpdb->prefix}sb SET status='%s' WHERE id=%d";
+        $sql="UPDATE {$wpdb->prefix}parsi_sokhan SET status='%s' WHERE id=%d";
         $res=$wpdb->query( $wpdb->prepare( $sql,$set_status ,$id ) );
 		echo " ";
         if($res)
@@ -53,7 +53,7 @@ function parsisokhan_delete_item(){
     $id=intval($_POST['id']);
     if($id!=0)
     {
-        $sql="DELETE FROM {$wpdb->prefix}sb WHERE id=%d";
+        $sql="DELETE FROM {$wpdb->prefix}parsi_sokhan WHERE id=%d";
         $res=$wpdb->query( $wpdb->prepare( $sql,$id ) );
         if($res)
         {
@@ -73,7 +73,7 @@ function parsisokhan_edit_item(){
     $content=  esc_attr($_POST['content']);
     if($teller!="" && $content!="")
     {
-        $sql="UPDATE {$wpdb->prefix}sb SET teller='%s',content='%s' WHERE id=%d";
+        $sql="UPDATE {$wpdb->prefix}parsi_sokhan SET teller='%s',content='%s' WHERE id=%d";
         $res=$wpdb->query( $wpdb->prepare( $sql,$teller ,$content,$id ) );
         if($res)
         {

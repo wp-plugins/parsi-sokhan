@@ -1,7 +1,7 @@
 <?php
 function sokhane_jadid_func() {
         global $wpdb;
-        $sql = "SELECT * FROM {$wpdb->prefix}sb WHERE status=1 ORDER BY rand() LIMIT 1";
+        $sql = "SELECT * FROM {$wpdb->prefix}parsi_sokhan WHERE status=1 ORDER BY rand() LIMIT 1";
         $result = $wpdb->get_row($sql);
         $teller = $result->teller;
         $content = $result->content;
@@ -12,7 +12,7 @@ function sokhane_jadid_func() {
 }
 function m_sokhane_jadid_func(){
          global $wpdb;
-        $sql = "SELECT * FROM {$wpdb->prefix}sb WHERE status=1 ORDER BY rand() LIMIT 1";
+        $sql = "SELECT * FROM {$wpdb->prefix}parsi_sokhan WHERE status=1 ORDER BY rand() LIMIT 1";
         $result = $wpdb->get_row($sql);
         $teller = $result->teller;
         $content = $result->content;

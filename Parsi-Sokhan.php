@@ -33,7 +33,7 @@ function admin_pages_parsisokhan() {
 }
 function parsisokhan_init(){
     global $wpdb;
-    $query='CREATE TABLE IF NOT EXISTS `'.$wpdb->prefix.'sb` (
+    $query='CREATE TABLE IF NOT EXISTS `'.$wpdb->prefix.'parsi_sokhan` (
             `id` int(20) NOT NULL AUTO_INCREMENT,
             `teller` text COLLATE utf8_bin NOT NULL,
             `content` text COLLATE utf8_bin NOT NULL,

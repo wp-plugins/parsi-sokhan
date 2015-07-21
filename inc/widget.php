@@ -11,7 +11,7 @@ class parsisokhan_Widget extends WP_Widget {
         $title = ($instance['title']) ? $instance['title'] : 'پارسی سخن';
         $default=($instance['default'])?$instance['default']:'هیچ سخنی در سیستم پیدا نشد.';
         global $wpdb;
-        $sql="SELECT * FROM {$wpdb->prefix}sb WHERE status=1 ORDER BY rand() LIMIT 1";
+        $sql="SELECT * FROM {$wpdb->prefix}parsi_sokhan WHERE status=1 ORDER BY rand() LIMIT 1";
         $result=$wpdb->get_row($sql);
         $teller=$result->teller;
         $content=$result->content;
