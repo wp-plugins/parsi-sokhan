@@ -4,7 +4,7 @@ Donate link: http://alivazirinia.ir/
 Tags: quotes, sokhan bozorgan , parsi sokhan
 Requires at least: 3.5
 Tested up to: 4.2.2
-Stable tag: 1.0
+Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,6 +51,8 @@ Answer [parsi_sokhan] , [parsi_sokhan_move]
 1. Here's a screenshot of it in action.
 
 == Changelog ==
+= 2.0 =
+* add import & export to csv file and from csv file
 
 = 1.0 =
 * release the first version
@@ -59,6 +61,9 @@ Answer [parsi_sokhan] , [parsi_sokhan_move]
 * List versions from most recent at top to oldest at bottom.
 
 == Upgrade Notice ==
+
+= 2.0 =
+* add import & export to csv file and from csv file
 
 = 1.0 =
 Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
