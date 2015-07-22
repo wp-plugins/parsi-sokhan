@@ -5,7 +5,7 @@
   Plugin URI:http://www.alivazirinia.ir/blog
   Description:  نمایش جملات و سخنان بزرگان
   Version: 1.0
-  Author: علی وزیری - کیوان علی محمدی 
+  Author: علی وزیری 
   Author URI:http://www.alivazirinia.ir
   License:GPL 2.0
  */
@@ -22,11 +22,20 @@ require_once (SB4WP_INC_DIR.'ajx_response.php');
 require_once (SB4WP_INC_DIR.'front-end.php');
 require_once (SB4WP_INC_DIR.'widget.php');
 require_once (SB4WP_INC_DIR.'sb_shortcode.php');
+include ('main.php');
 //hooks
 register_activation_hook(__FILE__,'parsisokhan_init');
 add_action('admin_menu', 'admin_pages_parsisokhan');
 add_action('admin_print_styles', 'sb_styles_parsisokhan');
 add_action('admin_print_scripts','sb_scripts_parsisokhan');
+ 
+add_action('admin_menu' , 'setting_parsi_sokhan'); 
+function setting_parsi_sokhan() {
+    global $csv_parsi_sokhan;
+    $csv_parsi_sokhan_page = add_submenu_page('sb_page', 'درون ریزی', 'درون ریزی', 'manage_options', basename(__FILE__), array($csv_parsi_sokhan,'csv_parsi_sokhan_menu_page'));
+		add_action( 'admin_print_scripts-' . $csv_parsi_sokhan_page, array( $csv_parsi_sokhan, 'csv_parsi_sokhan_admin_scripts' ) );  // Load our admin page scripts (our page only)
+		add_action( 'admin_print_styles-' . $csv_parsi_sokhan_page, array( $csv_parsi_sokhan, 'csv_parsi_sokhan_admin_styles' ) );  // Load our admin page stylesheet (our page only)
+}
 //Functions
 function admin_pages_parsisokhan() {
     add_menu_page("پارسی سخن", "پارسی سخن", 'manage_options', 'sb_page', 'parsisokhan_page_content' ,plugins_url( 'parsi-sokhan/img/icon.png' ), 99);
