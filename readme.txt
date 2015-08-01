@@ -29,7 +29,6 @@ The features of this plugin can be listed as follows:
 * قابلیت پشتیبانی گیری از سخنان 
 * قابلیت وارد کردن سخنان از فایل اکسل
 
-
 == Installation ==
 
 This section describes how to install the plugin and get it working.
