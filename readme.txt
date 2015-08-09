@@ -3,8 +3,8 @@ Contributors: (alivazirinia)
 Donate link: http://alivazirinia.ir/
 Tags: quotes, sokhan bozorgan , parsi sokhan
 Requires at least: 3.5
-Tested up to: 4.2.2
-Stable tag: 2.0
+Tested up to: 4.2.4
+Stable tag: 2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,6 +24,7 @@ The features of this plugin can be listed as follows:
 * امکان فعال و غير فعال سازي سخنان 
 * امکان جستجو بر اساس متن و نويسنده سخن
 * انتشار سخنان به صورت متن ثابت و متحرک
+* استفاده از ابزارک بسیار کاربردی
 * امکان استايل دهي راحت به سخنان 
 * سرعت فوق العاده در بارگذاري 
 * قابلیت پشتیبانی گیری از سخنان 
@@ -52,6 +53,9 @@ Answer [parsi_sokhan] , [parsi_sokhan_move]
 1. Here's a screenshot of it in action.
 
 == Changelog ==
+= 2.1 =
+* fixed widget error & tested up to wp 4.2.4
+
 = 2.0 =
 * add import & export to csv file and from csv file
 

@@ -3,10 +3,10 @@ class parsisokhan_Widget extends WP_Widget {
 
     function parsisokhan_Widget() {
         $widget_option = array('classname' => 'widget', 'description' => 'نمایش سخنان بزرگان');
-        parent::WP_Widget('sokhane-bozorgan', 'پارسی سخن', $widget_option);
+        parent::__construct('sokhane-bozorgan', 'پارسی سخن', $widget_option);
     }
 
-    function widget_parsisokhan($args, $instance) {
+    function widget($args, $instance) {
         extract($args, EXTR_SKIP);
         $title = ($instance['title']) ? $instance['title'] : 'پارسی سخن';
         $default=($instance['default'])?$instance['default']:'هیچ سخنی در سیستم پیدا نشد.';

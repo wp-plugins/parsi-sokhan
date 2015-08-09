@@ -4,7 +4,7 @@
   Plugin Name: پارسی سخن
   Plugin URI:http://www.alivazirinia.ir/blog
   Description:  نمایش جملات و سخنان بزرگان
-  Version: 2.0
+  Version: 2.1
   Author: علی وزیری 
   Author URI:http://www.alivazirinia.ir
   License:GPL 2.0
